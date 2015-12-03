@@ -170,5 +170,24 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="CardView" value="&lt;android.support.v7.widget.CardView&#10;    android:id=&quot;$viewId$&quot;&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:card_view=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:layout_gravity=&quot;center&quot;&#10;    card_view:cardBackgroundColor=&quot;$background$&quot;&#10;    card_view:cardCornerRadius=&quot;$cornerRadius$&quot;&#10;    card_view:cardUseCompatPadding=&quot;true&quot;&#10;    card_view:contentPadding=&quot;$cardContentPadding$&quot;&gt;&#10;&#10;&lt;/android.support.v7.widget.CardView&gt;" description="cardview layout declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="viewId" expression="" defaultValue="&quot;@+id/card_view&quot;" alwaysStopAt="true" />
+    <variable name="background" expression="" defaultValue="&quot;@null&quot;" alwaysStopAt="true" />
+    <variable name="cornerRadius" expression="" defaultValue="&quot;6dp&quot;" alwaysStopAt="true" />
+    <variable name="cardContentPadding" expression="" defaultValue="&quot;8dp&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="PercentRelativeLayout" value="&lt;android.support.percent.PercentRelativeLayout&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;$width$&quot;&#10;    android:layout_height=&quot;$height$&quot;&#10;    &gt;&#10;&#10;&lt;/android.support.percent.PercentRelativeLayout&gt;" description="PercentRelativeLayout declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="&quot;match_parent&quot;" alwaysStopAt="false" />
+    <variable name="height" expression="" defaultValue="&quot;match_parent&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
 
