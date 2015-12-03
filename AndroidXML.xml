@@ -221,5 +221,19 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
+  <template name="LinearLayout" value="&lt;LinearLayout&#10;    android:id=&quot;$id$&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;&#10;&lt;/LinearLayout&gt;" description="LinearLayout declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="&quot;@+id/linear_layout&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="RelativeLayout" value="&lt;RelativeLayout&#10;    android:id=&quot;$id$&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;&#10;&lt;/RelativeLayout&gt;" description="RelativeLayout declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="&quot;@+id/relative_layout&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
 
