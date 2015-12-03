@@ -62,6 +62,7 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **`sbc`**: "block comment for structuring code"
 - **`Sfmt`**: "String format"
 - **`starter`**: "Creates a static start(...) helper method to start an Activity"
+- **`tag`**: "generate TAG string constant"
 - **`Toast`**: "Create a new Toast"
 - **`ViewConstructors`**: "Adds generic view constructors"
 - **`visible`**: "Set view visibility to VISIBLE"
@@ -77,6 +78,9 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **`lwm`**: "android:layout_width=&quot;match_parent&quot;"
 - **`lww`**: "android:layout_width=&quot;wrap_content&quot;"
 - **`PercentRelativeLayout`**: "PercentRelativeLayout declaration"
+- **`textLarge`**: "android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;"
+- **`textMedium`**: "android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;"
+- **`textSmall`**: "android:textAppearance=&quot;?android:attr/textAppearanceSmall&quot;"
 - **`toolsNs`**: "adds tools namespace to Android xml file"
 
 ##Contribution
