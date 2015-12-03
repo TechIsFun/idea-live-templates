@@ -323,5 +323,17 @@
       <option name="COMPLETION" value="true" />
     </context>
   </template>
+  <template name="sdkc" value="if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.$VAR$) { &#10;    $END$ &#10;} " description="Check SDK Version" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
 </templateSet>
 
