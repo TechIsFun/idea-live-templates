@@ -204,5 +204,22 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
+  <template name="TextView" value="&lt;TextView&#10;    android:id=&quot;$id$&quot;&#10;    android:layout_width=&quot;$width$&quot;&#10;    android:layout_height=&quot;$height$&quot;&#10;    android:layout_gravity=&quot;center|left&quot;&#10;    android:gravity=&quot;center&quot;&#10;    android:singleLine=&quot;false&quot;&#10;    android:visibility=&quot;visible&quot;&#10;    tools:text=&quot;$text$&quot;&#10;    tools:visibility=&quot;visible&quot;&#10;/&gt;" description="TextView xml declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="&quot;@+id/textView&quot;" alwaysStopAt="true" />
+    <variable name="width" expression="" defaultValue="&quot;match_parent&quot;" alwaysStopAt="true" />
+    <variable name="height" expression="" defaultValue="&quot;match_parent&quot;" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="&quot;Lorem ipsum&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="FrameLayout" value="&lt;FrameLayout&#10;    android:id=&quot;$id$&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;&#10;&lt;/FrameLayout&gt;" description="FrameLayout declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="&quot;@+id/frame_layout&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
 
