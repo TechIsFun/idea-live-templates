@@ -189,5 +189,20 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
+  <template name="textSmall" value="android:textAppearance=&quot;?android:attr/textAppearanceSmall&quot;" description="android:textAppearance=&quot;?android:attr/textAppearanceSmall&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="textMedium" value="android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;" description="android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="textLarge" value="android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;" description="android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
 
