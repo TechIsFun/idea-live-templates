@@ -335,5 +335,18 @@
       <option name="COMPLETION" value="true" />
     </context>
   </template>
+  <template name="RecyclerViewAdapter" value=" public static class ViewHolderImpl extends RecyclerView.ViewHolder {&#10;&#10;    @InjectView(R.id.textView)&#10;    public TextView mTextView;&#10;&#10;    public ViewHolderImpl(View v) {&#10;        super(v);&#10;        ButterKnife.inject(this, v);&#10;    }&#10;}&#10;&#10;private class RecyclerAdapterImpl extends RecyclerView.Adapter&lt;ViewHolderImpl&gt; {&#10;&#10;    private List&lt;$type$&gt; mItems;&#10;&#10;    RecyclerAdapterImpl(List&lt;$type$&gt; items) {&#10;        mItems = items;&#10;    }&#10;&#10;    @Override&#10;    public ViewHolderImpl onCreateViewHolder(ViewGroup parent, int viewType) {&#10;        return new ViewHolderImpl(LayoutInflater.from(parent.getContext()).inflate(R.layout.$layout$, parent, false));&#10;    }&#10;&#10;    @Override&#10;    public int getItemViewType(int position) {&#10;        return 0;&#10;    }&#10;&#10;    @Override&#10;    public int getItemCount() {&#10;        return mItems.size();&#10;    }&#10;&#10;    @Override&#10;    public void onBindViewHolder(ViewHolderImpl viewHolder, final int position) {&#10;        &#10;        $type$ item = mItems.get(position);&#10;&#10;        // TODO: fill views&#10;    }&#10;}" description="RecyclerView Adapter and ViewHolder" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="&quot;T&quot;" alwaysStopAt="true" />
+    <variable name="layout" expression="" defaultValue="&quot;layout&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
 </templateSet>
 
