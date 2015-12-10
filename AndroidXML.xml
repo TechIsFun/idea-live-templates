@@ -191,17 +191,23 @@
   </template>
   <template name="textSmall" value="android:textAppearance=&quot;?android:attr/textAppearanceSmall&quot;" description="android:textAppearance=&quot;?android:attr/textAppearanceSmall&quot;" toReformat="false" toShortenFQNames="true">
     <context>
+      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
+      <option name="XML_TEXT" value="false" />
     </context>
   </template>
   <template name="textMedium" value="android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;" description="android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;" toReformat="false" toShortenFQNames="true">
-    <context />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="false" />
+    </context>
   </template>
   <template name="textLarge" value="android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;" description="android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;" toReformat="false" toShortenFQNames="true">
     <context>
+      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
+      <option name="XML_TEXT" value="false" />
     </context>
   </template>
   <template name="TextView" value="&lt;TextView&#10;    android:id=&quot;$id$&quot;&#10;    android:layout_width=&quot;$width$&quot;&#10;    android:layout_height=&quot;$height$&quot;&#10;    android:layout_gravity=&quot;center|left&quot;&#10;    android:gravity=&quot;center&quot;&#10;    android:singleLine=&quot;false&quot;&#10;    android:visibility=&quot;visible&quot;&#10;    tools:text=&quot;$text$&quot;&#10;    tools:visibility=&quot;visible&quot;&#10;/&gt;" description="TextView xml declaration" toReformat="false" toShortenFQNames="true">
