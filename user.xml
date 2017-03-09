@@ -51,13 +51,6 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="musement_textview" value="&lt;com.musement.android.widget.TextView&#10;    style=&quot;@style/Body1&quot;&#10;    android:id=&quot;@+id/$id$&quot;&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:gravity=&quot;center&quot;&#10;    android:layout_gravity=&quot;center&quot;&#10;    tools:text=&quot;$text$&quot;&#10;    /&gt;" toReformat="false" toShortenFQNames="true">
-    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
   <template name="background_white" value="android:background=&quot;#ffffff&quot;" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
@@ -130,12 +123,6 @@
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
       <option name="COMPLETION" value="false" />
-    </context>
-  </template>
-  <template name="avenir" value="app:fontPath=&quot;fonts/Avenir-$type$.ttf&quot;&#10;" toReformat="false" toShortenFQNames="true">
-    <variable name="type" expression="" defaultValue="Medium" alwaysStopAt="true" />
-    <context>
-      <option name="XML" value="true" />
     </context>
   </template>
   <template name="button_with_image" value="&lt;LinearLayout&#10;    android:id=&quot;@+id/contact_us&quot;&#10;    android:layout_width=&quot;250dp&quot;&#10;    android:layout_height=&quot;38dp&quot;&#10;    android:orientation=&quot;horizontal&quot;&#10;    android:gravity=&quot;center&quot;&#10;    android:layout_gravity=&quot;center&quot;&#10;    android:background=&quot;@drawable/box_white_border_grey_rounded&quot;&#10;    android:layout_marginTop=&quot;@dimen/margin_default&quot;&#10;    &gt;&#10;&#10;    &lt;ImageView&#10;        android:layout_width=&quot;wrap_content&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:src=&quot;@drawable/ic_contact&quot;&#10;        android:layout_marginRight=&quot;8dp&quot;/&gt;&#10;&#10;    &lt;com.musement.android.widget.TextView&#10;        android:layout_width=&quot;wrap_content&quot;&#10;        android:layout_height=&quot;match_parent&quot;&#10;        android:layout_gravity=&quot;center_horizontal&quot;&#10;        android:gravity=&quot;center&quot;&#10;        tools:text=&quot;my button&quot;&#10;        android:textColor=&quot;#787878&quot;&#10;        android:textSize=&quot;16sp&quot;&#10;        /&gt;&#10;&lt;/LinearLayout&gt;" description="" toReformat="false" toShortenFQNames="true">

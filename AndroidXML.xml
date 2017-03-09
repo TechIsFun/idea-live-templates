@@ -1,173 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="AndroidXML">
   <template name="appNs" value="xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;" description="adds application namespace" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="toolsNs" value="xmlns:tools=&quot;http://schemas.android.com/tools&quot;" description="adds tools namespace to Android xml file" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="lww" value="android:layout_width=&quot;wrap_content&quot;" description="android:layout_width=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="lw" value="android:layout_width=&quot;$width$&quot;" description="android:layout_width=&quot;&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="width" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="lwm" value="android:layout_width=&quot;match_parent&quot;" description="android:layout_width=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="lhw" value="android:layout_height=&quot;wrap_content&quot;" description="android:layout_height=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="lhm" value="android:layout_height=&quot;match_parent&quot;" description="android:layout_height=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="lh" value="android:layout_height=&quot;$height$&quot;" description="android:layout_height=&quot;&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="height" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="CardView" value="&lt;android.support.v7.widget.CardView&#10;    android:id=&quot;$viewId$&quot;&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:card_view=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:layout_gravity=&quot;center&quot;&#10;    card_view:cardBackgroundColor=&quot;$background$&quot;&#10;    card_view:cardCornerRadius=&quot;$cornerRadius$&quot;&#10;    card_view:cardUseCompatPadding=&quot;true&quot;&#10;    card_view:contentPadding=&quot;$cardContentPadding$&quot;&gt;&#10;&#10;&lt;/android.support.v7.widget.CardView&gt;" description="cardview layout declaration" toReformat="false" toShortenFQNames="true">
@@ -178,7 +49,6 @@
     <context>
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="PercentRelativeLayout" value="&lt;android.support.percent.PercentRelativeLayout&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;$width$&quot;&#10;    android:layout_height=&quot;$height$&quot;&#10;    &gt;&#10;&#10;&lt;/android.support.percent.PercentRelativeLayout&gt;" description="PercentRelativeLayout declaration" toReformat="false" toShortenFQNames="true">
@@ -186,26 +56,22 @@
     <variable name="height" expression="" defaultValue="&quot;match_parent&quot;" alwaysStopAt="false" />
     <context>
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="textSmall" value="android:textAppearance=&quot;?android:attr/textAppearanceSmall&quot;" description="android:textAppearance=&quot;?android:attr/textAppearanceSmall&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="XML_TEXT" value="false" />
     </context>
   </template>
   <template name="textMedium" value="android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;" description="android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="XML_TEXT" value="false" />
     </context>
   </template>
   <template name="textLarge" value="android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;" description="android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="XML_TEXT" value="false" />
     </context>
@@ -217,41 +83,34 @@
     <variable name="text" expression="" defaultValue="&quot;Lorem ipsum&quot;" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="FrameLayout" value="&lt;FrameLayout&#10;    android:id=&quot;$id$&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;&#10;&lt;/FrameLayout&gt;" description="FrameLayout declaration" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="&quot;@+id/frame_layout&quot;" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="LinearLayout" value="&lt;LinearLayout&#10;    android:id=&quot;$id$&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;&#10;&lt;/LinearLayout&gt;" description="LinearLayout declaration" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="&quot;@+id/linear_layout&quot;" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="RelativeLayout" value="&lt;RelativeLayout&#10;    android:id=&quot;$id$&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;&#10;&lt;/RelativeLayout&gt;" description="RelativeLayout declaration" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="&quot;@+id/relative_layout&quot;" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="CoordinatorWithTabs" value="&lt;android.support.design.widget.CoordinatorLayout&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    android:id=&quot;@+id/coordinator_layout&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&gt;&#10;&#10;    &lt;android.support.design.widget.AppBarLayout&#10;        android:id=&quot;@+id/appbar_ayout&quot;&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;56dp&quot;&#10;        android:theme=&quot;@style/ThemeOverlay.AppCompat.Dark.ActionBar&quot;&gt;&#10;&#10;        &lt;android.support.design.widget.TabLayout&#10;            android:id=&quot;@+id/tab_layout&quot;&#10;            android:layout_width=&quot;match_parent&quot;&#10;            android:layout_height=&quot;match_parent&quot;&#10;            app:layout_scrollFlags=&quot;scroll|enterAlways&quot;&#10;            app:tabIndicatorColor=&quot;@color/accent&quot;&#10;            /&gt;&#10;&#10;    &lt;/android.support.design.widget.AppBarLayout&gt;&#10;&#10;    &lt;!-- main content --&gt;&#10;    &lt;LinearLayout&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;match_parent&quot;&#10;        android:orientation=&quot;vertical&quot;&#10;        app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;/&gt;&#10;&#10;&lt;/android.support.design.widget.CoordinatorLayout&gt;" description="CoordinatorLayout + AppBarLayout + TabLayout" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="CoordinatorWithToolbar" value="&lt;android.support.design.widget.CoordinatorLayout&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    android:id=&quot;@+id/coordinator_layout&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&gt;&#10;&#10;    &lt;android.support.design.widget.AppBarLayout&#10;        android:id=&quot;@+id/appbar_ayout&quot;&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;56dp&quot;&#10;        android:theme=&quot;@style/ThemeOverlay.AppCompat.Dark.ActionBar&quot;&gt;&#10;&#10;        &lt;android.support.v7.widget.Toolbar&#10;            android:id=&quot;@+id/tabanim_toolbar&quot;&#10;            android:layout_width=&quot;match_parent&quot;&#10;            android:layout_height=&quot;?attr/actionBarSize&quot;&#10;            android:background=&quot;?attr/colorPrimary&quot;&#10;            app:layout_scrollFlags=&quot;scroll|enterAlways&quot;&#10;            app:popupTheme=&quot;@style/ThemeOverlay.AppCompat.Light&quot;&gt;&#10;&#10;        &lt;/android.support.v7.widget.Toolbar&gt;&#10;&#10;    &lt;/android.support.design.widget.AppBarLayout&gt;&#10;&#10;    &lt;!-- main content --&gt;&#10;    &lt;LinearLayout&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;match_parent&quot;&#10;        android:orientation=&quot;vertical&quot;&#10;        app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;/&gt;&#10;&#10;&lt;/android.support.design.widget.CoordinatorLayout&gt;" description="CoordinatorLayout + AppBarLayout + Toolbar" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
 </templateSet>
-

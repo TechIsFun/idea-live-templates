@@ -6,4 +6,10 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="avenir" value="app:fontPath=&quot;fonts/Avenir-$type$.ttf&quot;&#10;" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="Medium" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
 </templateSet>
