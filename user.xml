@@ -1,0 +1,152 @@
+<templateSet group="user">
+  <template name="checksdk" value="if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.LOLLIPOP) {&#10;&#10;} else {&#10;&#10;}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="buildIntent" value="public static android.content.Intent buildIntent(android.content.Context context) {    &#10;  android.content.Intent intent = new Intent(context, $ACT$.class);&#10;  intent.putExtra($CURSOR$);&#10;  return intent;&#10;}&#10;" description="creates a static buildIntent(…) helper method to build an Activity's intent" toReformat="false" toShortenFQNames="true">
+    <variable name="ACT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="whenthenreturn" value="when($object$.$method$).thenReturn($returnvalue$);&#10;" description="Mockito when" toReformat="true" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="returnvalue" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="image_view" value="&lt;ImageView&#10;        android:id=&quot;@+id/my_id&quot;&#10;        android:layout_width=&quot;wrap_content&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:scaleType=&quot;fitCenter&quot;&#10;        app:srcCompat=&quot;@drawable/my_drawable&quot;&#10;        /&gt;" description="ImageView xml declaration" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="margin_top" value="android:layout_marginTop=&quot;@dimen/margin_default&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="margin_bottom" value="android:layout_marginBottom=&quot;@dimen/margin_default&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="margin_left" value="android:layout_marginLeft=&quot;@dimen/activity_horizontal_margin&quot;&#10;android:layout_marginStart=&quot;@dimen/activity_horizontal_margin&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="margin_right" value="android:layout_marginRight=&quot;@dimen/activity_horizontal_margin&quot;&#10;android:layout_marginEnd=&quot;@dimen/activity_horizontal_margin&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="framelayout" value="&lt;FrameLayout&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:animateLayoutChanges=&quot;true&quot;    &#10;    &gt;&#10;    &#10;    $cursor$&#10;    &#10;&lt;/FrameLayout&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="musement_textview" value="&lt;com.musement.android.widget.TextView&#10;    style=&quot;@style/Body1&quot;&#10;    android:id=&quot;@+id/$id$&quot;&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:gravity=&quot;center&quot;&#10;    android:layout_gravity=&quot;center&quot;&#10;    tools:text=&quot;$text$&quot;&#10;    /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="background_white" value="android:background=&quot;#ffffff&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="listtype" value="Type listType = new TypeToken&lt;ArrayList&lt;$type$&gt;&gt;() {}.getType();" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="espresso_text_is_displayed" value="onView(withText($string$)).check(matches(isDisplayed()));&#10;" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="test" value="@Test&#10;public void test$methodName$() {&#10;    $cursor$&#10;}" description="junit test method declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="scrollview" value="&lt;ScrollView&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:fillViewport=&quot;true&quot;&gt;&#10;&#10;    &lt;LinearLayout &#10;        android:orientation=&quot;vertical&quot;&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        &gt;&#10;    &#10;        $cursor$&#10;&#10;    &lt;/LinearLayout&gt;&#10;&lt;/ScrollView&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="espresso_click" value="onView(withId(R.id.$view_id$)).perform(click());&#10;" toReformat="false" toShortenFQNames="true">
+    <variable name="view_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="recycler_delgates" value="protected void setupRecyclerView() {&#10;    RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);&#10;    recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));&#10;    adapter = new DelegationAdapter(getContext());&#10;    recyclerView.setAdapter(adapter);&#10;    &#10;    // when data is available&#10;    adapter.setItems(mItems);&#10;    adapter.notifyDataSetChanged();&#10;}&#10;&#10;/**&#10; * Adapter with delegation pattern&#10; */&#10;private class DelegationAdapter extends AbsDelegationAdapter&lt;List&lt;?&gt;&gt; {&#10;&#10;    DelegationAdapter(Context context) {&#10;        delegatesManager.addDelegate(new Delegate(context));&#10;        delegatesManager.setFallbackDelegate(new DefaultDelegate(context));&#10;    }&#10;}&#10;&#10;/**&#10; * First delegate&#10; */&#10;private class Delegate implements AdapterDelegate&lt;List&lt;?&gt;&gt; {&#10;&#10;    private final Context context;&#10;    private final LayoutInflater mLayoutInflater;&#10;&#10;    private Delegate(Context context) {&#10;        this.context = context;&#10;        mLayoutInflater = LayoutInflater.from(context);&#10;    }&#10;&#10;    @Override&#10;    public boolean isForViewType(@NonNull List&lt;?&gt; items, int position) {&#10;        Object o = items.get(position);&#10;        return o != null &amp;&amp; o instanceof ;&#10;    }&#10;&#10;    @NonNull&#10;    @Override&#10;    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent) {&#10;        View view = mLayoutInflater.inflate(R.layout.$layout$, parent, false);&#10;        return new BindingHolder(view);&#10;    }&#10;&#10;    @Override&#10;    public void onBindViewHolder(@NonNull List&lt;?&gt; items, int position, @NonNull RecyclerView.ViewHolder holder) {&#10;        ViewDataBinding binding = ((BindingHolder) holder).getBinding();&#10;        binding.setVariable(BR.item, items.get(position));&#10;        binding.executePendingBindings();&#10;        View view = binding.getRoot();&#10;    }&#10;}&#10;&#10;/**&#10; * Default delegate&#10; */&#10;static class DefaultDelegate extends AbsFallbackAdapterDelegate&lt;List&lt;?&gt;&gt; {&#10;&#10;    private final Context context;&#10;    private final LayoutInflater mLayoutInflater;&#10;&#10;    DefaultDelegate(Context context) {&#10;        this.context = context;&#10;        mLayoutInflater = LayoutInflater.from(context);&#10;    }&#10;&#10;    @NonNull&#10;    @Override&#10;    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent) {&#10;        View view = mLayoutInflater.inflate(R.layout.$layout$, parent, false);&#10;        return new BindingHolder(view);&#10;    }&#10;&#10;    @Override&#10;    public void onBindViewHolder(@NonNull List&lt;?&gt; items, int position, @NonNull RecyclerView.ViewHolder holder) {&#10;        ViewDataBinding binding = ((BindingHolder) holder).getBinding();&#10;        binding.setVariable(BR.item, items.get(position));&#10;        binding.executePendingBindings();&#10;        View view = binding.getRoot();&#10;        view.setOnClickListener(new View.OnClickListener() {&#10;            @Override&#10;            public void onClick(View v) {&#10;            }&#10;        });&#10;    }&#10;}" description="RecyclerView with adapter delegates" toReformat="false" toShortenFQNames="true">
+    <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="divider_horizontal" value="&lt;View&#10;  android:layout_width=&quot;match_parent&quot;&#10;  android:layout_height=&quot;0.5dp&quot;&#10;  android:background=&quot;@color/musement_separator&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="field_drawable" value="@DrawableRes int drawableId;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="field_stringres" value="@StringRes int stringResId;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="databinding_layout" value="&#10;&lt;layout&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&gt;&#10;&#10;    &lt;data&gt;&#10;&#10;        &lt;variable&#10;            name=&quot;item&quot;&#10;            type=&quot;$type$&quot;/&gt;&#10;    &lt;/data&gt;&#10;    &#10;    $cursor$&#10;    &#10;&lt;/layout&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="robolectric_annotations" value="@RunWith(CustomRobolectricTestRunner.class)&#10;@Config(constants = BuildConfig.class, sdk = 21)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="avenir" value="app:fontPath=&quot;fonts/Avenir-$type$.ttf&quot;&#10;" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="Medium" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="button_with_image" value="&lt;LinearLayout&#10;    android:id=&quot;@+id/contact_us&quot;&#10;    android:layout_width=&quot;250dp&quot;&#10;    android:layout_height=&quot;38dp&quot;&#10;    android:orientation=&quot;horizontal&quot;&#10;    android:gravity=&quot;center&quot;&#10;    android:layout_gravity=&quot;center&quot;&#10;    android:background=&quot;@drawable/box_white_border_grey_rounded&quot;&#10;    android:layout_marginTop=&quot;@dimen/margin_default&quot;&#10;    &gt;&#10;&#10;    &lt;ImageView&#10;        android:layout_width=&quot;wrap_content&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:src=&quot;@drawable/ic_contact&quot;&#10;        android:layout_marginRight=&quot;8dp&quot;/&gt;&#10;&#10;    &lt;com.musement.android.widget.TextView&#10;        android:layout_width=&quot;wrap_content&quot;&#10;        android:layout_height=&quot;match_parent&quot;&#10;        android:layout_gravity=&quot;center_horizontal&quot;&#10;        android:gravity=&quot;center&quot;&#10;        tools:text=&quot;my button&quot;&#10;        android:textColor=&quot;#787878&quot;&#10;        android:textSize=&quot;16sp&quot;&#10;        /&gt;&#10;&lt;/LinearLayout&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="IllegalStateException" value="if ($variable$ == null) throw new IllegalStateException(&quot;$variable$ cannot be null!&quot;);&#10;" toReformat="false" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

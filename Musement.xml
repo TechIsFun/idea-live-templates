@@ -1,0 +1,9 @@
+<templateSet group="MusementLiveTemplates">
+  <template name="textview" value="&lt;com.musement.android.widget.TextView&#10;    android:id=&quot;@+id/$id$&quot;&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:textSize=&quot;14sp&quot;&#10;    android:textColor=&quot;#626262&quot;&#10;    app:fontPath=&quot;fonts/Avenir-Medium.ttf&quot;&#10;    tools:text=&quot;$text$&quot;&#10;    android:layout_below=&quot;@id/review_body&quot;&#10;    android:layout_marginTop=&quot;4dp&quot;&#10;    /&gt;" description="Custom TextView xml declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>
