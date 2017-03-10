@@ -9,6 +9,7 @@
   <template name="noop" value="/* no-op */" description="indicate that a method does not have any operations" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
   <template name="stopship" value="// STOPSHIP: $date$ $todo$ " description="adds //STOPSHIP" toReformat="true" toShortenFQNames="true">
