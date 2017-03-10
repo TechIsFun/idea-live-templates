@@ -1,46 +1,4 @@
 <templateSet group="AndroidXML">
-  <template name="appNs" value="xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;" description="adds application namespace" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
-  <template name="toolsNs" value="xmlns:tools=&quot;http://schemas.android.com/tools&quot;" description="adds tools namespace to Android xml file" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
-  <template name="lww" value="android:layout_width=&quot;wrap_content&quot;" description="android:layout_width=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
-  <template name="lw" value="android:layout_width=&quot;$width$&quot;" description="android:layout_width=&quot;&quot;" toReformat="false" toShortenFQNames="true">
-    <variable name="width" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
-  <template name="lwm" value="android:layout_width=&quot;match_parent&quot;" description="android:layout_width=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
-  <template name="lhw" value="android:layout_height=&quot;wrap_content&quot;" description="android:layout_height=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
-  <template name="lhm" value="android:layout_height=&quot;match_parent&quot;" description="android:layout_height=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
-  <template name="lh" value="android:layout_height=&quot;$height$&quot;" description="android:layout_height=&quot;&quot;" toReformat="false" toShortenFQNames="true">
-    <variable name="height" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
   <template name="CardView" value="&lt;android.support.v7.widget.CardView&#10;    android:id=&quot;$viewId$&quot;&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:card_view=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:layout_gravity=&quot;center&quot;&#10;    card_view:cardBackgroundColor=&quot;$background$&quot;&#10;    card_view:cardCornerRadius=&quot;$cornerRadius$&quot;&#10;    card_view:cardUseCompatPadding=&quot;true&quot;&#10;    card_view:contentPadding=&quot;$cardContentPadding$&quot;&gt;&#10;&#10;&lt;/android.support.v7.widget.CardView&gt;" description="cardview layout declaration" toReformat="false" toShortenFQNames="true">
     <variable name="viewId" expression="" defaultValue="&quot;@+id/card_view&quot;" alwaysStopAt="true" />
     <variable name="background" expression="" defaultValue="&quot;@null&quot;" alwaysStopAt="true" />
