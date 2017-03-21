@@ -101,4 +101,13 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="textview" value="TextView textView = new TextView(context);&#10;textView.setText(R.string.$string_res$);&#10;textView.setTextColor(ContextCompat.getColor(context, R.color.$color_res$));&#10;textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 12);&#10;textView.setTypeface(TextView.AVENIR_BOOK);" description="create a new TextView" toReformat="false" toShortenFQNames="true">
+    <variable name="string_res" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color_res" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
