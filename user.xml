@@ -136,4 +136,10 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="recyclerview_adapter" value="class $name$Adapter extends RecyclerView.Adapter&lt;$name$ViewHolder&gt; {&#10;    private final Context mContext;&#10;    private final List&lt;$name$&gt; mItems;&#10;    private final LayoutInflater mLayoutInflater;&#10;&#9;&#10;    public $name$Adapter(Context context, List&lt;$name$&gt; items) {&#10;        mContext = context;&#10;        mItems = items;&#10;        mLayoutInflater = LayoutInflater.from(context);&#10;    }&#10;&#9;&#10;&#9;@Override&#10;    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {&#10;        return new $name$ViewHolder(mLayoutInflater.inflate(R.layout.my_item_layout, parent, false));&#10;    }&#10;&#10;    @Override&#10;    public void onBindViewHolder($name$ViewHolder holder, int position) {&#10;        $name$ViewHolder viewHolder = (($name$ViewHolder) holder);&#10;        $name$ item = mItems.get(position);&#10;    }&#10;&#10;    @Override&#10;    public int getItemCount() {&#10;        return mItems.size();&#10;    }&#10;&#10;&#9;public class $name$ViewHolder extends RecyclerView.ViewHolder {&#10;&#9;&#9;public ViewHolder(View itemView) {&#10;&#9;&#9;    super(itemView);&#10;&#9;&#9;}&#10;&#9;}&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
