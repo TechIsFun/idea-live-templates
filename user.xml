@@ -147,4 +147,10 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="getColor" value="ContextCompat.getColor(context, colorRes)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
