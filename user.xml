@@ -154,4 +154,10 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="dp2px" value="TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, $CURSOR$, context.getResources().getDisplayMetrics());" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
