@@ -160,4 +160,20 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="before" value="@Before&#10;public void setUp() {&#10;    $CURSOR$&#10;}" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="after" value="@After&#10;public void tearDown() {&#10;  $CURSOR$&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
 </templateSet>
