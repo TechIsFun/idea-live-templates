@@ -1,5 +1,5 @@
 <templateSet group="user">
-  <template name="checksdk" value="if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.LOLLIPOP) {&#10;&#10;} else {&#10;&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="checksdk" value="if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.LOLLIPOP) {&#10;&#10;} else {&#10;&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
@@ -16,8 +16,8 @@
     <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="returnvalue" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
   <template name="image_view" value="&lt;ImageView&#10;        android:id=&quot;@+id/my_id&quot;&#10;        android:layout_width=&quot;wrap_content&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:scaleType=&quot;fitCenter&quot;&#10;        app:srcCompat=&quot;@drawable/my_drawable&quot;&#10;        /&gt;" description="ImageView xml declaration" toReformat="false" toShortenFQNames="true">
@@ -25,44 +25,44 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="margin_top" value="android:layout_marginTop=&quot;@dimen/margin_default&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="margin_top" value="android:layout_marginTop=&quot;@dimen/margin_default&quot;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="margin_bottom" value="android:layout_marginBottom=&quot;@dimen/margin_default&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="margin_bottom" value="android:layout_marginBottom=&quot;@dimen/margin_default&quot;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="margin_left" value="android:layout_marginLeft=&quot;@dimen/activity_horizontal_margin&quot;&#10;android:layout_marginStart=&quot;@dimen/activity_horizontal_margin&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="margin_left" value="android:layout_marginLeft=&quot;@dimen/activity_horizontal_margin&quot;&#10;android:layout_marginStart=&quot;@dimen/activity_horizontal_margin&quot;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="margin_right" value="android:layout_marginRight=&quot;@dimen/activity_horizontal_margin&quot;&#10;android:layout_marginEnd=&quot;@dimen/activity_horizontal_margin&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="margin_right" value="android:layout_marginRight=&quot;@dimen/activity_horizontal_margin&quot;&#10;android:layout_marginEnd=&quot;@dimen/activity_horizontal_margin&quot;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="framelayout" value="&lt;FrameLayout&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:animateLayoutChanges=&quot;true&quot;    &#10;    &gt;&#10;    &#10;    $cursor$&#10;    &#10;&lt;/FrameLayout&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="framelayout" value="&lt;FrameLayout&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:animateLayoutChanges=&quot;true&quot;    &#10;    &gt;&#10;    &#10;    $cursor$&#10;    &#10;&lt;/FrameLayout&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="background_white" value="android:background=&quot;#ffffff&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="background_white" value="android:background=&quot;#ffffff&quot;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="listtype" value="Type listType = new TypeToken&lt;ArrayList&lt;$type$&gt;&gt;() {}.getType();" toReformat="false" toShortenFQNames="true">
+  <template name="listtype" value="Type listType = new TypeToken&lt;ArrayList&lt;$type$&gt;&gt;() {}.getType();" description="" toReformat="false" toShortenFQNames="true">
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="espresso_text_is_displayed" value="onView(withText($string$)).check(matches(isDisplayed()));&#10;" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+  <template name="espresso_text_is_displayed" value="onView(withText($string$)).check(matches(isDisplayed()));&#10;" description="" toReformat="false" toShortenFQNames="true" useStaticImport="true">
     <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
@@ -75,13 +75,13 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="scrollview" value="&lt;ScrollView&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:fillViewport=&quot;true&quot;&gt;&#10;&#10;    &lt;LinearLayout &#10;        android:orientation=&quot;vertical&quot;&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        &gt;&#10;    &#10;        $cursor$&#10;&#10;    &lt;/LinearLayout&gt;&#10;&lt;/ScrollView&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="scrollview" value="&lt;ScrollView&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:fillViewport=&quot;true&quot;&gt;&#10;&#10;    &lt;LinearLayout &#10;        android:orientation=&quot;vertical&quot;&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        &gt;&#10;    &#10;        $cursor$&#10;&#10;    &lt;/LinearLayout&gt;&#10;&lt;/ScrollView&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="espresso_click" value="onView(withId(R.id.$view_id$)).perform(click());&#10;" toReformat="false" toShortenFQNames="true">
+  <template name="espresso_click" value="onView(withId(R.id.$view_id$)).perform(click());&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="view_id" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
@@ -93,36 +93,36 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="divider_horizontal" value="&lt;View&#10;  android:layout_width=&quot;match_parent&quot;&#10;  android:layout_height=&quot;0.5dp&quot;&#10;  android:background=&quot;@color/musement_separator&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="divider_horizontal" value="&lt;View&#10;  android:layout_width=&quot;match_parent&quot;&#10;  android:layout_height=&quot;0.5dp&quot;&#10;  android:background=&quot;@color/musement_separator&quot; /&gt;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="field_drawable" value="@DrawableRes int drawableId;" toReformat="false" toShortenFQNames="true">
+  <template name="field_drawable" value="@DrawableRes int drawableId;" description="" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="field_stringres" value="@StringRes int stringResId;" toReformat="false" toShortenFQNames="true">
+  <template name="field_stringres" value="@StringRes int stringResId;" description="" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="databinding_layout" value="&#10;&lt;layout&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&gt;&#10;&#10;    &lt;data&gt;&#10;&#10;        &lt;variable&#10;            name=&quot;item&quot;&#10;            type=&quot;$type$&quot;/&gt;&#10;    &lt;/data&gt;&#10;    &#10;    $cursor$&#10;    &#10;&lt;/layout&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="databinding_layout" value="&#10;&lt;layout&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&gt;&#10;&#10;    &lt;data&gt;&#10;&#10;        &lt;variable&#10;            name=&quot;item&quot;&#10;            type=&quot;$type$&quot;/&gt;&#10;    &lt;/data&gt;&#10;    &#10;    $cursor$&#10;    &#10;&lt;/layout&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="robolectric_annotations" value="@RunWith(CustomRobolectricTestRunner.class)&#10;@Config(constants = BuildConfig.class, sdk = 21)" toReformat="false" toShortenFQNames="true">
+  <template name="robolectric_annotations" value="@RunWith(CustomRobolectricTestRunner.class)&#10;@Config(constants = BuildConfig.class, sdk = 21)" description="" toReformat="false" toShortenFQNames="true">
     <context>
+      <option name="COMPLETION" value="false" />
       <option name="JAVA_CODE" value="true" />
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
       <option name="KOTLIN" value="true" />
     </context>
   </template>
@@ -131,36 +131,36 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="IllegalStateException" value="if ($variable$ == null) throw new IllegalStateException(&quot;$variable$ cannot be null!&quot;);&#10;" toReformat="false" toShortenFQNames="true">
+  <template name="IllegalStateException" value="if ($variable$ == null) throw new IllegalStateException(&quot;$variable$ cannot be null!&quot;);&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="recyclerview_adapter" value="class $name$Adapter extends RecyclerView.Adapter&lt;$name$ViewHolder&gt; {&#10;    private final Context mContext;&#10;    private final List&lt;$name$&gt; mItems;&#10;    private final LayoutInflater mLayoutInflater;&#10;&#9;&#10;    public $name$Adapter(Context context, List&lt;$name$&gt; items) {&#10;        mContext = context;&#10;        mItems = items;&#10;        mLayoutInflater = LayoutInflater.from(context);&#10;    }&#10;&#9;&#10;&#9;@Override&#10;    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {&#10;        return new $name$ViewHolder(mLayoutInflater.inflate(R.layout.my_item_layout, parent, false));&#10;    }&#10;&#10;    @Override&#10;    public void onBindViewHolder($name$ViewHolder holder, int position) {&#10;        $name$ViewHolder viewHolder = (($name$ViewHolder) holder);&#10;        $name$ item = mItems.get(position);&#10;    }&#10;&#10;    @Override&#10;    public int getItemCount() {&#10;        return mItems.size();&#10;    }&#10;&#10;&#9;public class $name$ViewHolder extends RecyclerView.ViewHolder {&#10;&#9;&#9;public ViewHolder(View itemView) {&#10;&#9;&#9;    super(itemView);&#10;&#9;&#9;}&#10;&#9;}&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="recyclerview_adapter" value="class $name$Adapter extends RecyclerView.Adapter&lt;$name$ViewHolder&gt; {&#10;    private final Context mContext;&#10;    private final List&lt;$name$&gt; mItems;&#10;    private final LayoutInflater mLayoutInflater;&#10;&#9;&#10;    public $name$Adapter(Context context, List&lt;$name$&gt; items) {&#10;        mContext = context;&#10;        mItems = items;&#10;        mLayoutInflater = LayoutInflater.from(context);&#10;    }&#10;&#9;&#10;&#9;@Override&#10;    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {&#10;        return new $name$ViewHolder(mLayoutInflater.inflate(R.layout.my_item_layout, parent, false));&#10;    }&#10;&#10;    @Override&#10;    public void onBindViewHolder($name$ViewHolder holder, int position) {&#10;        $name$ViewHolder viewHolder = (($name$ViewHolder) holder);&#10;        $name$ item = mItems.get(position);&#10;    }&#10;&#10;    @Override&#10;    public int getItemCount() {&#10;        return mItems.size();&#10;    }&#10;&#10;&#9;public class $name$ViewHolder extends RecyclerView.ViewHolder {&#10;&#9;&#9;public ViewHolder(View itemView) {&#10;&#9;&#9;    super(itemView);&#10;&#9;&#9;}&#10;&#9;}&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="intdef" value="@Retention(SOURCE)&#10;@IntDef({THINGS_TO_DO, EAT_AND_DRINK, HAVING_FUN})&#10;public @interface ScreenType {}&#10;public static final int THINGS_TO_DO = 0;&#10;public static final int EAT_AND_DRINK = 1;&#10;public static final int HAVING_FUN = 2;" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+  <template name="intdef" value="@Retention(SOURCE)&#10;@IntDef({THINGS_TO_DO, EAT_AND_DRINK, HAVING_FUN})&#10;public @interface ScreenType {}&#10;public static final int THINGS_TO_DO = 0;&#10;public static final int EAT_AND_DRINK = 1;&#10;public static final int HAVING_FUN = 2;" description="" toReformat="false" toShortenFQNames="true" useStaticImport="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="getColor" value="ContextCompat.getColor(context, colorRes)" toReformat="false" toShortenFQNames="true">
+  <template name="getColor" value="ContextCompat.getColor(context, colorRes)" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="dp2px" value="TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, $CURSOR$, context.getResources().getDisplayMetrics());" toReformat="false" toShortenFQNames="true">
+  <template name="dp2px" value="TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, $CURSOR$, context.getResources().getDisplayMetrics());" description="" toReformat="false" toShortenFQNames="true">
     <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="before" value="@Before&#10;public void setUp() {&#10;    $CURSOR$&#10;}" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+  <template name="before" value="@Before&#10;public void setUp() {&#10;    $CURSOR$&#10;}" description="" toReformat="false" toShortenFQNames="true" useStaticImport="true">
     <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
@@ -168,12 +168,73 @@
       <option name="JAVA_STRING" value="false" />
     </context>
   </template>
-  <template name="after" value="@After&#10;public void tearDown() {&#10;  $CURSOR$&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="after" value="@After&#10;public void tearDown() {&#10;  $CURSOR$&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="musement_toolbar" value="&lt;android.support.v7.widget.Toolbar&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;?attr/actionBarSize&quot;&#10;        android:theme=&quot;@style/ToolbarAccentTheme&quot;&#10;        app:popupTheme=&quot;@style/ThemeOverlay.AppCompat.Light&quot;&#10;        &gt;&#10;&#10;        &lt;TextView&#10;            android:layout_width=&quot;wrap_content&quot;&#10;            android:layout_height=&quot;wrap_content&quot;&#10;            android:layout_gravity=&quot;center_horizontal&quot;&#10;            android:textAppearance=&quot;@style/ToolbarAccentTitle&quot;&#10;            android:text=&quot;@string/SIGNIN&quot;&#10;            /&gt;&#10;&#10; &lt;/android.support.v7.widget.Toolbar&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="autoSize_attributes" value="app:autoSizeTextType=&quot;uniform&quot;&#10;app:autoSizeMinTextSize=&quot;9sp&quot;&#10;app:autoSizeMaxTextSize=&quot;14sp&quot;&#10;app:autoSizeStepGranularity=&quot;2sp&quot;" description="autoSizeTextType and other attributes" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="adapter_for_recyclerview" value="public class CustomAdapter extends RecyclerView.Adapter&lt;CustomAdapter.ViewHolder&gt; {&#10;&#10;    private List&lt;$type$&gt; items;&#10;    private Context context;&#10;&#10;    public CustomAdapter(Context context, List&lt;$type$&gt; items) {&#10;        this.list = items;&#10;        this.context = context;&#10;    }&#10;    &#10;    @Override&#10;    public CustomAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {&#10;        LayoutInflater inflater = LayoutInflater.from(context);&#10;        View row = inflater.inflate(R.layout.adapter_item_layout, parent, false);&#10;        return new ViewHolder(row);&#10;&#10;    }&#10;&#10;    @Override&#10;    public void onBindViewHolder(CustomAdapter.ViewHolder viewHolder, int position) {&#10;        $type$ item = items.get(position);&#10;        TextView textView = viewHolder.title;&#10;        textView.setText(item.getTitle());&#10;    }&#10;&#10;    @Override&#10;    public int getItemCount() {&#10;        return items != null ? items.size() : 0;&#10;    }&#10;&#10;    static class ViewHolder extends RecyclerView.ViewHolder {&#10;&#10;        public TextView title;&#10;&#10;        ViewHolder(View itemView) {&#10;            super(itemView);&#10;            title = itemView.findViewById(R.id.title);&#10;        }&#10;    }&#10;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="camelCase(String)" defaultValue="Object" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="okhttp-get-sync" value="val request = Request.Builder()&#10;    .url(&quot;$URL$&quot;)&#10;    .build()&#10;&#10;val client = OkHttpClient.Builder()&#10;        .connectTimeout(60, TimeUnit.SECONDS)&#10;        .build()&#10;&#10;client.newCall(request).execute().use({ response -&gt;&#10;    if (!response.isSuccessful) throw IOException(&quot;Unexpected code $response&quot;)&#10;&#10;    val body = response.body()&#10;})&#10;" description="Sync get request" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="okhttp-get-async" value="val request = Request.Builder()&#10;                .url(&quot;$URL$&quot;)&#10;                .build()&#10;&#10;val client = OkHttpClient.Builder()&#10;        .connectTimeout(60, TimeUnit.SECONDS)&#10;        .build()&#10;&#10;client.newCall(request).enqueue(object : Callback {&#10;    override fun onFailure(call: Call, e: IOException) {&#10;        Timber.w(e)&#10;    }&#10;&#10;    @Throws(IOException::class)&#10;    override fun onResponse(call: Call, response: Response) {&#10;        response.body().use { responseBody -&gt;&#10;            if (!response.isSuccessful) throw IOException(&quot;Unexpected code ${response.code()}&quot;)&#10;&#10;            Timber.d(responseBody.string())&#10;        }&#10;    }&#10;})" description="Async get request" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="endp" value="endpoint" description="endpoint string" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STRING" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="relaxedmock" value="@RelaxedMockK&#10;lateinit var $CURSOR$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+      <option name="KOTLIN_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="inject_lateinit_var" value="@Inject&#10;lateinit var $varName$ : $type$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="varName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="uuid" value="UUID.randomUUID().toString()" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="nav_action" value="&lt;action&#10;    android:id=&quot;@+id/$action_id$&quot;&#10;    app:destination=&quot;@id/$dest_id$&quot;&#10;    app:enterAnim=&quot;@anim/slide_in_right&quot;&#10;    app:exitAnim=&quot;@anim/slide_out_left&quot;&#10;    app:popEnterAnim=&quot;@anim/slide_in_left&quot;&#10;    app:popExitAnim=&quot;@anim/slide_out_right&quot;&#10;    app:popUpTo=&quot;@id/$dest_id$&quot;&#10;    app:popUpToInclusive=&quot;true&quot;&#10;    /&gt;&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="action_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dest_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
     </context>
   </template>
 </templateSet>

@@ -2,49 +2,37 @@
   <template name="Toast" value="Toast.makeText($className$.this, &quot;$text$&quot;, Toast.LENGTH_SHORT).show();" description="Create a new Toast" toReformat="true" toShortenFQNames="true">
     <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
     <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_STATEMENT" value="true" />
-    </context>
+    <context />
   </template>
   <template name="rouiT" value="getActivity().runOnUiThread(new Runnable() {&#10;    @Override&#10;    public void run() {&#10;        $cursor$&#10;    }&#10;});" description="runOnUIThread" toReformat="true" toShortenFQNames="true">
     <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_STATEMENT" value="true" />
-    </context>
+    <context />
   </template>
   <template name="fbc" value="($cast$) findViewById(R.id.$resId$);" description="findViewById with cast" toReformat="true" toShortenFQNames="true">
     <variable name="cast" expression="expectedType()" defaultValue="" alwaysStopAt="true" />
     <variable name="resId" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
   <template name="IntentView" value="Intent view = new Intent();&#10;view.setAction(Intent.ACTION_VIEW);&#10;view.setData(Uri.parse($url$));&#10;startActivity(view);" description="Creates an Intent with ACTION_VIEW" toReformat="true" toShortenFQNames="true">
     <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_STATEMENT" value="true" />
-    </context>
+    <context />
   </template>
   <template name="ViewConstructors" value="public $class$(Context context) {&#10;    this(context, null);&#10;}&#10;&#10;public $class$(Context context, AttributeSet attrs) {&#10;    this(context, attrs, 0);&#10;}&#10;&#10;public $class$(Context context, AttributeSet attrs, int defStyle) {&#10;    super(context, attrs, defStyle);&#10;    $cursor$&#10;}" description="Adds generic view constructors" toReformat="true" toShortenFQNames="true">
     <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="class" expression="className()" defaultValue="" alwaysStopAt="false" />
-    <context>
-      <option name="JAVA_DECLARATION" value="true" />
-    </context>
+    <context />
   </template>
   <template name="rgS" value="mResources.getString(R.string.$stringId$)" description="get a String from resources" toReformat="true" toShortenFQNames="true">
     <variable name="stringId" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-    </context>
+    <context />
   </template>
   <template name="rgC" value="mResources.getColor(R.color.$colorId$)" description="get a color from resources" toReformat="true" toShortenFQNames="true">
     <variable name="colorId" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
   <template name="newInstance" value="public static $fragment$ newInstance($args$) {&#10;    $nullChecks$&#10;    Bundle args = new Bundle();&#10;    $addArgs$&#10;    $fragment$ fragment = new $fragment$();&#10;    fragment.setArguments(args);&#10;    return fragment;&#10;}" description="create a new Fragment instance with arguments" toReformat="true" toShortenFQNames="true">
@@ -52,22 +40,16 @@
     <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="nullChecks" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="addArgs" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_DECLARATION" value="true" />
-    </context>
+    <context />
   </template>
   <template name="starter" value="public static void start(Context context) {&#10;    Intent starter = new Intent(context, $ACTIVITY$.class);&#10;    starter.putExtra($CURSOR$);&#10;    context.startActivity(starter);&#10;}" description="Creates a static start(...) helper method to start an Activity" toReformat="false" toShortenFQNames="true">
     <variable name="ACTIVITY" expression="className()" defaultValue="" alwaysStopAt="true" />
     <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_DECLARATION" value="true" />
-    </context>
+    <context />
   </template>
   <template name="gone" value="$VIEW$.setVisibility(View.GONE);" description="Set view visibility to GONE" toReformat="true" toShortenFQNames="true">
     <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_STATEMENT" value="true" />
-    </context>
+    <context />
   </template>
   <template name="tag" value="public static final String TAG = $className$.class.getSimpleName();" description="generate TAG string constant" toReformat="false" toShortenFQNames="true">
     <variable name="className" expression="className()" defaultValue="" alwaysStopAt="false" />
@@ -88,7 +70,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="view_state" value="//region View State&#10;private $field_type_1$ $field_name_1$;&#10;private $field_type_2$ $field_name_2$;&#10;&#10;@Override&#10;public Parcelable onSaveInstanceState() {&#10;  Parcelable superState = super.onSaveInstanceState();&#10;  SavedState ss = new SavedState(superState);&#10;  ss.$field_name_1$ = this.$field_name_1$;&#10;  ss.$field_name_2$ = this.$field_name_2$;&#10;  return ss;&#10;}&#10;&#10;@Override&#10;public void onRestoreInstanceState(Parcelable state) {&#10;  if(!(state instanceof SavedState)) {&#10;    super.onRestoreInstanceState(state);&#10;    return;&#10;  }&#10;&#10;  SavedState ss = (SavedState)state;&#10;  super.onRestoreInstanceState(ss.getSuperState());&#10;  this.$field_name_1$ = ss.$field_name_1$;&#10;  this.$field_name_2$ = ss.$field_name_2$;&#10;}&#10;&#10;static class SavedState extends BaseSavedState {&#10;  $field_type_1$ $field_name_1$;&#10;  $field_type_2$ $field_name_2$;&#10;&#10;  SavedState(Parcelable superState) {&#10;    super(superState);&#10;  }&#10;&#10;  private SavedState(Parcel in) {&#10;    super(in);&#10;    this.$field_name_1$ = in.read$field_type_1_camelCase$();&#10;    this.$field_name_2$ = in.read$field_type_2_camelCase$();&#10;  }&#10;&#10;  @Override&#10;  public void writeToParcel(Parcel out, int flags) {&#10;    super.writeToParcel(out, flags);&#10;    out.write$field_type_1_camelCase$(this.$field_name_1$);&#10;    out.write$field_type_2_camelCase$(this.$field_name_2$);&#10;  }&#10;&#10;  //required field that makes Parcelables from a Parcel&#10;  public static final Parcelable.Creator&lt;SavedState&gt; CREATOR =&#10;      new Parcelable.Creator&lt;SavedState&gt;() {&#10;        public SavedState createFromParcel(Parcel in) {&#10;          return new SavedState(in);&#10;        }&#10;        public SavedState[] newArray(int size) {&#10;          return new SavedState[size];&#10;        }&#10;  };&#10;}&#10;//endregion" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="view_state" value="//region View State&#10;private $field_type_1$ $field_name_1$;&#10;private $field_type_2$ $field_name_2$;&#10;&#10;@Override&#10;public Parcelable onSaveInstanceState() {&#10;  Parcelable superState = super.onSaveInstanceState();&#10;  SavedState ss = new SavedState(superState);&#10;  ss.$field_name_1$ = this.$field_name_1$;&#10;  ss.$field_name_2$ = this.$field_name_2$;&#10;  return ss;&#10;}&#10;&#10;@Override&#10;public void onRestoreInstanceState(Parcelable state) {&#10;  if(!(state instanceof SavedState)) {&#10;    super.onRestoreInstanceState(state);&#10;    return;&#10;  }&#10;&#10;  SavedState ss = (SavedState)state;&#10;  super.onRestoreInstanceState(ss.getSuperState());&#10;  this.$field_name_1$ = ss.$field_name_1$;&#10;  this.$field_name_2$ = ss.$field_name_2$;&#10;}&#10;&#10;static class SavedState extends BaseSavedState {&#10;  $field_type_1$ $field_name_1$;&#10;  $field_type_2$ $field_name_2$;&#10;&#10;  SavedState(Parcelable superState) {&#10;    super(superState);&#10;  }&#10;&#10;  private SavedState(Parcel in) {&#10;    super(in);&#10;    this.$field_name_1$ = in.read$field_type_1_camelCase$();&#10;    this.$field_name_2$ = in.read$field_type_2_camelCase$();&#10;  }&#10;&#10;  @Override&#10;  public void writeToParcel(Parcel out, int flags) {&#10;    super.writeToParcel(out, flags);&#10;    out.write$field_type_1_camelCase$(this.$field_name_1$);&#10;    out.write$field_type_2_camelCase$(this.$field_name_2$);&#10;  }&#10;&#10;  //required field that makes Parcelables from a Parcel&#10;  public static final Parcelable.Creator&lt;SavedState&gt; CREATOR =&#10;      new Parcelable.Creator&lt;SavedState&gt;() {&#10;        public SavedState createFromParcel(Parcel in) {&#10;          return new SavedState(in);&#10;        }&#10;        public SavedState[] newArray(int size) {&#10;          return new SavedState[size];&#10;        }&#10;  };&#10;}&#10;//endregion" description="" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="field_type_1" expression="&quot;String&quot;" defaultValue="" alwaysStopAt="true" />
     <variable name="field_name_1" expression="&quot;field1&quot;" defaultValue="" alwaysStopAt="true" />
     <variable name="field_type_2" expression="&quot;int&quot;" defaultValue="" alwaysStopAt="true" />
@@ -96,26 +78,26 @@
     <variable name="field_type_1_camelCase" expression="capitalize(field_type_1)" defaultValue="" alwaysStopAt="false" />
     <variable name="field_type_2_camelCase" expression="capitalize(field_type_2)" defaultValue="" alwaysStopAt="false" />
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
   <template name="textview" value="TextView textView = new TextView(context);&#10;textView.setText(R.string.$string_res$);&#10;textView.setTextColor(ContextCompat.getColor(context, R.color.$color_res$));&#10;textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 12);&#10;textView.setTypeface(TextView.AVENIR_BOOK);" description="create a new TextView" toReformat="false" toShortenFQNames="true">
     <variable name="string_res" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="color_res" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="pref_edit" value="mPreferences.edit().put$type$($value$).apply();" toReformat="false" toShortenFQNames="true">
+  <template name="pref_edit" value="mPreferences.edit().put$type$($value$).apply();" description="" toReformat="false" toShortenFQNames="true">
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
 </templateSet>

@@ -1,10 +1,10 @@
 <templateSet group="Junit">
-  <template name="tearDown" value="@After&#10;public void tearDown() {&#10;    $cursor$&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="tearDown" value="@After&#10;public void tearDown() {&#10;    $cursor$&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
 </templateSet>

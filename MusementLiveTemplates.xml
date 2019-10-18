@@ -6,10 +6,15 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="avenir" value="app:fontPath=&quot;fonts/Avenir-$type$.ttf&quot;&#10;" toReformat="false" toShortenFQNames="true">
+  <template name="avenir" value="app:fontPath=&quot;fonts/Avenir-$type$.ttf&quot;&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="type" expression="" defaultValue="Medium" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="TicketProductModel" value="TicketProductModel(&#10;        productId = &quot;p1&quot;,&#10;        name = &quot;test product&quot;,&#10;        quantity = 0,&#10;        priceFormatted = &quot;99 €&quot;,&#10;        priceValue = 99f,&#10;        minBuy = 0,&#10;        maxBuy = 10&#10;)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
     </context>
   </template>
 </templateSet>

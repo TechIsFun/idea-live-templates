@@ -5,8 +5,8 @@
     <variable name="cornerRadius" expression="" defaultValue="&quot;6dp&quot;" alwaysStopAt="true" />
     <variable name="cardContentPadding" expression="" defaultValue="&quot;8dp&quot;" alwaysStopAt="true" />
     <context>
-      <option name="XSL_TEXT" value="false" />
       <option name="XML" value="true" />
+      <option name="XSL_TEXT" value="false" />
     </context>
   </template>
   <template name="PercentRelativeLayout" value="&lt;android.support.percent.PercentRelativeLayout&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;$width$&quot;&#10;    android:layout_height=&quot;$height$&quot;&#10;    &gt;&#10;&#10;&lt;/android.support.percent.PercentRelativeLayout&gt;" description="PercentRelativeLayout declaration" toReformat="false" toShortenFQNames="true">
